@@ -1,0 +1,12 @@
+/*!
+ * Voice & Ink - Styles
+ *
+ * Copyright 2013 Voice & Ink
+ *
+ * Developer: Matt Strick (matt@mattstrick.com)
+ */
+ 
+#header {
+	background: #fff; /* Todo: Change to image after testing */
+	border: 1px solid;
+}
