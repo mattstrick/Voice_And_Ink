@@ -10,3 +10,7 @@
 	background: #fff; /* Todo: Change to image after testing */
 	border: 1px solid;
 }
+
+#content {
+	margin-top: 100px;
+}
