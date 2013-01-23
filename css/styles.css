@@ -6,8 +6,17 @@
  * Developer: Matt Strick (matt@mattstrick.com)
  */
  
+body,
+a {
+	color: #2C285D;
+}
+
+a:hover {
+	color: #58595B;
+}
+ 
 #header {
-	background: blue; /* Todo: Change to image after testing */
+	background: #2C285D; /* Todo: Change to image after testing */
 	padding: 0 15px 0 15px;
 }
 
@@ -44,8 +53,7 @@
 
 #content {
 	margin-top: 120px; /* Compensates for the height of the header */
-	padding-top: 60px;
-	color: #2C285D;
+	padding-top: 60px;	
 }
 
 	/* Icons */
@@ -83,3 +91,7 @@
 	#content .event  {
 		background: url(../img/pictogram_event.png) no-repeat;
 	}
+	
+#footer a{
+	font-weight: bold;
+}
