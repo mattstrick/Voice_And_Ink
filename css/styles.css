@@ -1,4 +1,4 @@
-/*!
+/*
  * Voice & Ink - Styles
  *
  * Copyright 2013 Voice & Ink
@@ -7,10 +7,79 @@
  */
  
 #header {
-	background: #fff; /* Todo: Change to image after testing */
-	border: 1px solid;
+	background: blue; /* Todo: Change to image after testing */
+	padding: 0 15px 0 15px;
 }
 
+	/* Voice And Ink Logo */
+	#header h2 {
+		text-indent: -999em;
+		background: url(../img/logo.png) no-repeat;
+		height: 100px;
+		width: 150px;
+		float: left;
+	}
+
+	/* Social Icons */
+	#header #social li {
+		margin-right: 10px;
+	}
+	
+	#header #social a {
+		text-indent: -9999em;
+		height: 30px;
+	}
+	
+	.facebook  a{
+		background: url(../img/social_facebook.png) no-repeat;			
+	}
+	
+	.twitter  a{
+		background: url(../img/social_twitter.png) no-repeat;			
+	}
+	
+	.email  a{
+		background: url(../img/social_email.png) no-repeat;			
+	}
+
 #content {
-	margin-top: 100px;
+	margin-top: 120px; /* Compensates for the height of the header */
+	padding-top: 60px;
+	color: #2C285D;
 }
+
+	/* Icons */
+	#content .event,
+	#content .campers,	
+	#content .ourstory,
+	#content .pro,
+	#content .romantic,
+	#content .yourstory {
+		background: url(../img/pictogram_happycampers.png) no-repeat;
+		height: 150px;
+		width: 150px;
+	}
+		
+	#content .campers  {
+		background: url(../img/pictogram_happycampers.png) no-repeat;
+	}	
+	
+	#content .yourstory {
+		background: url(../img/pictogram_yourstory.png) no-repeat;
+	}
+
+	#content .romantic {
+		background: url(../img/pictogram_romantic.png) no-repeat;
+	}
+	
+	#content .pro {
+		background: url(../img/pictogram_pro.png) no-repeat;
+	}
+	
+	#content .ourstory  {
+		background: url(../img/pictogram_ourstory.png) no-repeat;
+	}
+	
+	#content .event  {
+		background: url(../img/pictogram_event.png) no-repeat;
+	}
