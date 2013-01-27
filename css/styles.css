@@ -7,17 +7,30 @@
  */
  
 body,
-a {
+a,
+a:visited{
 	color: #2C285D;
 }
 
 a:hover {
 	color: #58595B;
 }
+
+hr {
+    border-bottom: 5px dotted #2C285D;
+}
  
 #header {
 	background: #2C285D; /* Todo: Change to image after testing */
+	
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
 }
+
+	#header ul {
+		margin-top: 80px;
+	}
 
 	/* Voice And Ink Logo */
 	#header h2 {
@@ -27,6 +40,21 @@ a:hover {
 		width: 150px;
 		float: left;
 	}
+	
+	/* Main Navigation */
+	#header #navigation {
+		font-size: 20px;			
+	}
+		
+		#header #navigation a{
+			color: #fff;	
+			padding: 0;
+			margin:7px 12px 0 12px;
+		}
+		
+		#header #navigation a:hover {
+			border-bottom: 5px dotted #fff;
+		}
 
 	/* Social Icons */
 	#header #social li {
@@ -35,7 +63,6 @@ a:hover {
 	
 	#header #social a {
 		text-indent: -9999em;
-		height: 30px;
 	}
 	
 	.facebook  a{
@@ -90,7 +117,15 @@ a:hover {
 	#content .event  {
 		background: url(../img/pictogram_event.png) no-repeat;
 	}
-	
-#footer a{
-	font-weight: bold;
+
+#footer {
+	margin-top:	15px;
 }
+
+	#footer #footerContent {
+		border-top: 5px dotted #2C285D;
+	}
+	
+	#footer a{
+		font-weight: bold;
+	}
