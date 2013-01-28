@@ -6,7 +6,16 @@
  * Developer: Matt Strick (matt@mattstrick.com)
  */
  
-body,
+body {
+	color: #58595B;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 a,
 a:visited{
 	color: #2C285D;
@@ -19,9 +28,20 @@ a:hover {
 hr {
     border-bottom: 5px dotted #2C285D;
 }
+
+blockquote {
+	border: 0;
+	font-style: italic;
+}
+	
+	blockquote small {
+		font-style: normal;
+	}
  
 #header {
 	background: #2C285D; /* Todo: Change to image after testing */
+	
+	padding: 20px;
 	
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
@@ -43,7 +63,9 @@ hr {
 	
 	/* Main Navigation */
 	#header #navigation {
-		font-size: 20px;			
+		font-size: 16px;	
+		text-transform: uppercase;
+		font-weight: bold;
 	}
 		
 		#header #navigation a{
@@ -117,12 +139,27 @@ hr {
 	#content .event  {
 		background: url(../img/pictogram_event.png) no-repeat;
 	}
+	
+/* Carousel */
+
+#portfolio_carousel .narrow_item {
+	margin: 0 70px;
+}
+
+#portfolio_carousel .carousel-control {
+	background-color: #2C285D;
+	opacity: 1;
+}
+
+#portfolio_carousel .carousel-control:hover {
+	opacity: 0.6;
+}
 
 #footer {
 	margin-top:	15px;
 }
 
-	#footer #footerContent {
+	#footer #footer_content {
 		border-top: 5px dotted #2C285D;
 	}
 	
