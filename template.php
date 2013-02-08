@@ -2,29 +2,12 @@
 <html>
   <head>
     <title>Voice &amp; Ink</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
-	<link href="css/styles.css" rel="stylesheet" media="screen">
+	
+    <? include './css_includes.php'; ?>
   </head>
   <body>
 
-	<div id="header" class="navbar navbar-fixed-top container">
-		<div class="row">
-			<h2 class="span2"><a href="/"><img src="./img/logo.png" alt="Voice &amp; Ink" /></a></h2>
-			<ul id="navigation" class="nav span8">
-				<li><a href="/" class="yourstory">Your Story</a></li>
-				<li><a href="/services.php" class="services">Services</a></li>
-				<li><a href="/campers.php" class="campers">Happy Campers</a></li>
-				<li><a href="/ourstory.php" class="ourstory">Our Story</a></li>
-				<li><a href="/contact.php" class="contact">Contact</a></li>
-			</ul>
-			<ul id="social" class="nav span2">
-				<li class="facebook"><a href="#">Facebook</a></li>
-				<li class="twitter"><a href="#">Twitter</a></li>
-				<li class="email"><a href="#">Email</a></li>
-			</ul>
-		</div>
-	</div> <!-- #header END -->
+	<? include './header.php'; ?>
 	<div id="content" class="container">
 		<div class="row">
 			<div class="span2 yourstory"></div>
@@ -125,17 +108,8 @@
 			<div class="offset2"><!-- Leave alone --></div>
 		</div>		
 	</div> <!-- #content END -->
-	<div id="footer" class="container">
-		<div class="row">
-			<div id="footer_content" class="span8 offset2">
-				&copy; <a href="/">Voice &amp; Ink</a> 2013. <a href="#">Email us</a>. Or find us on <a href="#">Facebook</a>.
-			</div>
-			<div class="offset2"><!-- Leave alone --></div>
-		</div>
-	</div><!-- #footer END -->
+	<? include './footer.php'; ?>
 
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-	<script src="js/functions.js"></script>
+    <? include './js_includes.php'; ?>
   </body>
 </html>
