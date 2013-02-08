@@ -8,6 +8,8 @@
  
 body {
 	color: #58595B;
+	background: url(../img/background.jpg);
+	font-family: georgia, serif;
 }
 
 h1,
@@ -39,9 +41,9 @@ blockquote {
 	}
  
 #header {
-	background: #2C285D; /* Todo: Change to image after testing */
-	
+	background: url(../img/header.png);	
 	padding: 20px;
+	height: 120px;
 	
 	-webkit-border-radius: 12px;
 	-moz-border-radius: 12px;
@@ -49,15 +51,12 @@ blockquote {
 }
 
 	#header ul {
-		margin-top: 80px;
+		margin-top: 70px;
 	}
 
 	/* Voice And Ink Logo */
 	#header h2 {
-		text-indent: -999em;
-		background: url(../img/logo.png) no-repeat;
-		height: 100px;
-		width: 150px;
+
 		float: left;
 	}
 	
@@ -71,12 +70,50 @@ blockquote {
 		#header #navigation a{
 			color: #fff;	
 			padding: 0;
-			margin:7px 12px 0 12px;
+			margin:7px 9px 0;
 		}
 		
-		#header #navigation a:hover {
+		#header #navigation a:hover,
+		#header #navigation a.on {
 			border-bottom: 5px dotted #fff;
 		}
+		
+		/* Navigation Icons */
+		
+		#header .contact,
+		#header .campers,	
+		#header .ourstory,
+		#header .services,
+		#header .yourstory {
+			height: 25px;			
+			text-indent: -999em;
+		}
+			
+		#header .contact {
+			background: url(../img/nav_contact.png) no-repeat;
+			width: 76px;
+		}
+		
+		#header .campers  {
+			width: 142px;
+			background: url(../img/nav_happycampers.png) no-repeat;
+		}	
+		
+		#header .ourstory  {
+			background: url(../img/nav_ourstory.png) no-repeat;
+			width: 101px;
+		}
+		
+		#header .services {
+			background: url(../img/nav_services.png) no-repeat;
+			width: 82px;
+		}
+		
+		#header .yourstory {
+			background: url(../img/nav_yourstory.png) no-repeat;
+			width: 111px;
+		}
+		
 
 	/* Social Icons */
 	#header #social li {
@@ -104,14 +141,13 @@ blockquote {
 	padding-top: 60px;	
 }
 
-	/* Icons */
+	/* Pictogram Icons */
 	#content .event,
 	#content .campers,	
 	#content .ourstory,
 	#content .pro,
 	#content .romantic,
 	#content .yourstory {
-		background: url(../img/pictogram_happycampers.png) no-repeat;
 		height: 150px;
 		width: 150px;
 	}
@@ -148,6 +184,7 @@ blockquote {
 
 #portfolio_carousel .carousel-control {
 	background-color: #2C285D;
+	color: #fff;
 	opacity: 1;
 }
 
